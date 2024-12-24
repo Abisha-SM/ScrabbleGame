@@ -101,8 +101,8 @@ public class GuestLogin : MonoBehaviour
     public void OnLogoutButtonClick()
     {
        // LoginPanel.SetActive(true);
-        guestNameImage.gameObject.SetActive(false);
-        guestNameImage.gameObject.SetActive(false);
+        //guestNameImage.gameObject.SetActive(false);
+      //  guestNameImage.gameObject.SetActive(false);
         // OpenLoginPanel.gameObject.SetActive(true);
 
         PlayerPrefs.DeleteKey("guestloginbool");

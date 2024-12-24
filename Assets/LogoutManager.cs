@@ -47,7 +47,7 @@ public class LogoutManager : MonoBehaviour
 
     public void OnClickPlayBtn()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("GameScene");
     }
 }
 
