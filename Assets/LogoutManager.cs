@@ -17,20 +17,20 @@ public class LogoutManager : MonoBehaviour
         {
              panel.gameObject.SetActive(true);
         }*/
-        Debug.Log("Elan LogoutManager ===> " + GlobalManager.Instance.faceBookLogin);
+        Debug.Log("LogoutManager ===> " + GlobalManager.Instance.faceBookLogin);
         //Debug.Log("Elan LogoutManager11111 ===> " + FaceBookLogin.instance.FBLoginbool);
 
         if (GlobalManager.Instance.faceBookLogin != null)
         {
-            Debug.Log("Elan LogoutManager 1111===> " + GlobalManager.Instance.faceBookLogin);
+            Debug.Log("LogoutManager 1111===> " + GlobalManager.Instance.faceBookLogin);
             // FaceBookLogin.instance.LoadFacebookData();
         }
 
     }
     public void LogOutButtonClk()
     {
-        Debug.Log("Elan comes Logoutmanager");
-        Debug.Log("ELan Logoutmanager ===>" + GlobalManager.Instance.faceBookLogin);
+        Debug.Log("comes Logoutmanager");
+        Debug.Log("Logoutmanager ===>" + GlobalManager.Instance.faceBookLogin);
         if (GlobalManager.Instance.googleLoginManager.googleLoginbool == true)
         {
             GlobalManager.Instance.googleLoginManager.OnSignOut();

@@ -28,7 +28,7 @@ public class FaceBookLogin : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log("Elan FB manager Awake ==>" + GlobalManager.Instance);
+        Debug.Log("FB manager Awake ==>" + GlobalManager.Instance);
         /*if (instance == null)
         {
             instance = this;
@@ -55,10 +55,10 @@ public class FaceBookLogin : MonoBehaviour
         GlobalManager.Instance.InitializeFacebookLogin();
 
         FBLoginbool = PlayerPrefs.GetInt("FBLoginbool", 0) == 1;
-        Debug.Log("Elan FB manager Start 11111==>" + FBLoginbool);
+        Debug.Log("FB manager Start 11111==>" + FBLoginbool);
         if (FBLoginbool)
         {
-            Debug.Log("Elan FB manager Start 22222==>" + FBLoginbool);
+            Debug.Log("FB manager Start 22222==>" + FBLoginbool);
             LoadFacebookData();
             panel.gameObject.SetActive(true);
             openpanel.gameObject.SetActive(true);
@@ -224,11 +224,11 @@ public class FaceBookLogin : MonoBehaviour
 
     public void LoadFacebookData()
     {
-        Debug.Log("Elan FB manager LoadFacebookData ==>");
+        Debug.Log("FB manager LoadFacebookData ==>");
         // Load Facebook data from PlayerPrefs
         if (PlayerPrefs.HasKey(FBUserNameKey) && PlayerPrefs.HasKey(FBUserIdKey) && PlayerPrefs.HasKey(FBUserDpKey))
         {
-            Debug.Log("Elan FB manager LoadFacebookData 1111 ==>");
+            Debug.Log("FB manager LoadFacebookData 1111 ==>");
             string savedName = PlayerPrefs.GetString(FBUserNameKey);
             string savedUserId = PlayerPrefs.GetString(FBUserIdKey);
             string savedProfilePicUrl = PlayerPrefs.GetString(FBUserDpKey);
