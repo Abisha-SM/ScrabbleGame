@@ -68,7 +68,8 @@ public class GoogleLoginManager : MonoBehaviour
     public void OnSignIn()
     {
         GoogleSignIn.Configuration = configuration;
-        GoogleSignIn.DefaultInstance.SignIn().ContinueWith(OnAuthenticationFinished);
+        GoogleSignIn.DefaultInstance.SignIn().ContinueWith(
+            OnAuthenticationFinished, TaskScheduler.Default);
     }
 
     internal void OnAuthenticationFinished(Task<GoogleSignInUser> task)
@@ -97,7 +98,8 @@ public class GoogleLoginManager : MonoBehaviour
             PlayerPrefs.SetString(GoogleUserNameKey, task.Result.DisplayName);
             PlayerPrefs.SetString(GoogleUserIdKey, task.Result.IdToken);
 
-            string profilePicUrl = task.Result.ImageUrl != null ? task.Result.ImageUrl.ToString() : null;
+            // string profilePicUrl = task.Result.ImageUrl != null ? task.Result.ImageUrl.ToString() : null;
+            string profilePicUrl = task.Result.ImageUrl.ToString();
             Debug.Log("Google login manager OnAuthenticationFinished====>" + profilePicUrl);
             if (profilePicUrl != null)
             {
@@ -106,6 +108,7 @@ public class GoogleLoginManager : MonoBehaviour
             PlayerPrefs.Save();
 
             StartCoroutine(ShowPanels(profilePicUrl));
+            LoadGoogleData();
         }
     }
 
@@ -136,8 +139,8 @@ public class GoogleLoginManager : MonoBehaviour
         if (panel != null) panel.SetActive(true);
         if (openpanel != null) openpanel.SetActive(true);
         if (GuestBtn != null) GuestBtn.SetActive(false);
-        //defaultAvatar.enabled = true;
-        //defaultAvatar.gameObject.SetActive(true);
+        defaultAvatar.enabled = true;
+        defaultAvatar.gameObject.SetActive(true);
 
         if (defaultAvatar != null)
         {

@@ -222,6 +222,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnClickPlayBtn
       objectReference: {fileID: 0}
+    - target: {fileID: 1334626902904190889, guid: 24e925f381fab41c392e148cc90f4666, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2082264816243798419, guid: 24e925f381fab41c392e148cc90f4666, type: 3}
       propertyPath: m_Pivot.x
       value: 0
