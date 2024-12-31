@@ -179,53 +179,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3029189474989609, guid: 24e925f381fab41c392e148cc90f4666, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3029189474989609, guid: 24e925f381fab41c392e148cc90f4666, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3029189474989609, guid: 24e925f381fab41c392e148cc90f4666, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 13500431}
-    - target: {fileID: 3029189474989609, guid: 24e925f381fab41c392e148cc90f4666, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 120213254}
-    - target: {fileID: 3029189474989609, guid: 24e925f381fab41c392e148cc90f4666, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3029189474989609, guid: 24e925f381fab41c392e148cc90f4666, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LogOutButtonClk
-      objectReference: {fileID: 0}
-    - target: {fileID: 3029189474989609, guid: 24e925f381fab41c392e148cc90f4666, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 3029189474989609, guid: 24e925f381fab41c392e148cc90f4666, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 3029189474989609, guid: 24e925f381fab41c392e148cc90f4666, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 433488599914454276, guid: 24e925f381fab41c392e148cc90f4666, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 13500431}
     - target: {fileID: 433488599914454276, guid: 24e925f381fab41c392e148cc90f4666, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnClickPlayBtn
-      objectReference: {fileID: 0}
-    - target: {fileID: 1334626902904190889, guid: 24e925f381fab41c392e148cc90f4666, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 13500431}
     - target: {fileID: 2082264816243798419, guid: 24e925f381fab41c392e148cc90f4666, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -310,10 +270,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4073022851493573910, guid: 24e925f381fab41c392e148cc90f4666, type: 3}
-      propertyPath: m_Name
-      value: Play
-      objectReference: {fileID: 0}
     - target: {fileID: 5693684530458752556, guid: 24e925f381fab41c392e148cc90f4666, type: 3}
       propertyPath: m_Name
       value: Logins (1)
@@ -322,26 +278,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1378244719}
-    - target: {fileID: 6697221807630927152, guid: 24e925f381fab41c392e148cc90f4666, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnSignIn
-      objectReference: {fileID: 0}
     - target: {fileID: 8787309734045199734, guid: 24e925f381fab41c392e148cc90f4666, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 962084941}
-    - target: {fileID: 8787309734045199734, guid: 24e925f381fab41c392e148cc90f4666, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Login
-      objectReference: {fileID: 0}
     - target: {fileID: 9055834045879194331, guid: 24e925f381fab41c392e148cc90f4666, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 435611210}
-    - target: {fileID: 9055834045879194331, guid: 24e925f381fab41c392e148cc90f4666, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnGuestLoginButtonClick
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -467,6 +411,7 @@ MonoBehaviour:
   guestlogin: 0
   hide: {fileID: 120213252}
   guestNameImage: {fileID: 120213251}
+  GoogleDp: {fileID: 0}
   statusText: {fileID: 120213245}
 --- !u!4 &435611211
 Transform:
