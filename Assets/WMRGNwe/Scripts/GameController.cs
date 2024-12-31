@@ -99,10 +99,10 @@ public class GameController : MonoBehaviour {
     void FitUIElements() {
         canvasWidth = GameObject.FindObjectOfType<Canvas>().GetComponent<RectTransform>().rect.width;
         float canvasHeight = GameObject.FindObjectOfType<Canvas>().GetComponent<RectTransform>().rect.height;
-        float slotSize = canvasWidth / 7.0f;
+        float slotSize = canvasWidth / 8.0f;
 
         float ratio = (float)Screen.width / Screen.height;
-        ButtonsPanel.GetComponent<RectTransform>().anchorMax = new Vector2(1, 1.0f - ratio);
+      //  ButtonsPanel.GetComponent<RectTransform>().anchorMax = new Vector2(1, 1.0f - ratio);
         menuPanel.GetComponent<RectTransform>().sizeDelta = new Vector2(canvasWidth, canvasHeight);
         menuPanel.GetComponent<RectTransform>().anchoredPosition = new Vector2(-canvasWidth, 0);
         menuPanel.SetActive(true);
@@ -116,8 +116,8 @@ public class GameController : MonoBehaviour {
                 slotRT.anchoredPosition = new Vector2(dx, 0);
                 dx += slotSize;
                 slotRT.sizeDelta = new Vector2(slotSize, slotSize);
-                slot.GetComponent<UISlot>().UITile.GetComponent<RectTransform>().sizeDelta = new Vector2(slotSize - 2, slotSize - 2);
-                slot.GetComponent<UISlot>().UITile.GetComponent<BoxCollider2D>().size = new Vector2(slotSize - 2, slotSize - 2);
+                slot.GetComponent<UISlot>().UITile.GetComponent<RectTransform>().sizeDelta = new Vector2(slotSize - 1, slotSize - 1);
+                slot.GetComponent<UISlot>().UITile.GetComponent<BoxCollider2D>().size = new Vector2(slotSize - 1, slotSize - 1);
                 slot.GetComponent<UISlot>().UITile.GetComponent<RectTransform>().anchoredPosition = slot.GetComponent<RectTransform>().anchoredPosition;
                 slot.GetComponent<UISlot>().UITile.GetComponent<UITile>().lastPosition = slot.GetComponent<RectTransform>().anchoredPosition;
             }
